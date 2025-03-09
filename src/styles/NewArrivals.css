@@ -23,6 +23,8 @@
     gap: 2rem;
     padding: 1rem 1.5rem;
     scrollbar-width: none; /* Firefox */
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+    scroll-snap-type: x mandatory;
   }
   
   .scrollable-grid::-webkit-scrollbar {
@@ -36,6 +38,7 @@
     border: 1px solid var(--soft-blue);
     border-radius: 8px;
     padding: 1rem;
+    scroll-snap-align: start;
   }
   
   .image-placeholder {
