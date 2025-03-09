@@ -53,3 +53,17 @@
     color: var(--charcoal-grey);
     cursor: pointer;
   }
+
+  .nav-links a.active {
+    color: var(--soft-blue);
+  }
+  
+  .nav-links a.active::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: var(--soft-blue);
+  }

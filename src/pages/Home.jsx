@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <div className="home-page">
       <Header />
-      <Navbar />
+      <Navbar activeTab="Home" />
       <div className="hero-video">
         <div className="video-placeholder">
           {/* Add your video tag here */}
