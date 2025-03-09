@@ -4,13 +4,13 @@
     align-items: center;
     padding: 1rem 2rem;
     background: var(--white);
-    border-bottom: 1px solid var(--blush-pink);
+    border-bottom: 1px solid var(--soft-blue);
   }
   
   .logo {
     font-family: 'Libre Baskerville', serif;
     font-size: 2rem;
-    color: var(--burgundy);
+    color: var(--charcoal-grey);
   }
   
   .nav-links {
@@ -19,7 +19,7 @@
   }
   
   .nav-links a {
-    color: var(--burgundy);
+    color: var(--charcoal-grey);
     text-decoration: none;
     position: relative;
   }
@@ -31,7 +31,7 @@
     left: 0;
     width: 100%;
     height: 2px;
-    background: var(--blush-pink);
+    background: var(--soft-blue);
   }
   
   .nav-icons {
@@ -42,7 +42,7 @@
   
   .nav-icons input {
     padding: 0.5rem;
-    border: 1px solid var(--blush-pink);
+    border: 1px solid var(--soft-blue);
     border-radius: 20px;
   }
   
@@ -50,6 +50,6 @@
     background: none;
     border: none;
     font-size: 1.2rem;
-    color: var(--burgundy);
+    color: var(--charcoal-grey);
     cursor: pointer;
   }

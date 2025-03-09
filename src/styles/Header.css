@@ -6,12 +6,12 @@
   }
   
   .header-tabs span {
-    color: var(--burgundy);
+    color: var(--charcoal-grey);
     font-size: 0.9rem;
     margin: 0 0.5rem;
     cursor: pointer;
   }
   
   .divider {
-    color: var(--blush-pink);
+    color: var(--soft-blue);
   }

@@ -10,7 +10,7 @@
   .video-placeholder {
     width: 90%;
     height: 90%;
-    background: var(--blush-pink);
+    background: var(--soft-blue);
     display: flex;
     justify-content: center;
     align-items: center;

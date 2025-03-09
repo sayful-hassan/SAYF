@@ -2,8 +2,8 @@
 
 :root {
   --white: #FFFFFF;
-  --burgundy: #800020;
-  --blush-pink: #F8AFA6;
+  --charcoal-grey: #2F2F2F;
+  --soft-blue: #A0C4E3;
 }
 
 * {
@@ -14,8 +14,80 @@
 
 body {
   font-family: 'Poppins', sans-serif;
+  background: var(--white);
 }
 
 h1, h2, h3 {
   font-family: 'Libre Baskerville', serif;
+  color: var(--charcoal-grey);
+}
+
+/* Global Button Styles */
+.primary-btn {
+  background: var(--charcoal-grey);
+  color: var(--white);
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.primary-btn:hover {
+  background: var(--soft-blue);
+}
+
+.secondary-btn {
+  background: var(--soft-blue);
+  color: var(--charcoal-grey);
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.secondary-btn:hover {
+  background: var(--white);
+  color: var(--charcoal-grey);
+}
+
+/* Navigation Bar Updates */
+.main-nav {
+  background: var(--white);
+  border-bottom: 1px solid var(--soft-blue);
+}
+
+.nav-links a {
+  color: var(--charcoal-grey);
+}
+
+.nav-links a:hover::after {
+  background: var(--soft-blue);
+}
+
+/* Footer Base Styles */
+footer {
+  background: var(--charcoal-grey);
+  color: var(--white);
+}
+
+footer a:hover {
+  color: var(--soft-blue);
+}
+
+/* Product Card Base Styles */
+.product-card {
+  background: var(--white);
+  border: 1px solid var(--soft-blue);
+}
+
+.product-title {
+  color: var(--charcoal-grey);
+}
+
+.product-price {
+  color: var(--charcoal-grey);
+}
+
+.product-description {
+  color: var(--soft-blue);
 }
