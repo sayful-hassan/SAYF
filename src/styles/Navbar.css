@@ -67,3 +67,41 @@
     height: 2px;
     background: var(--soft-blue);
   }
+
+  @media (max-width: 768px) {
+    .nav-links {
+      gap: 0.8rem;
+    }
+    
+    .nav-links a {
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .main-nav {
+      flex-direction: column;
+      align-items: stretch;
+    }
+    
+    .logo {
+      text-align: center;
+    }
+    
+    .nav-links {
+      order: 2;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      justify-content: space-around;
+    }
+    
+    .nav-icons {
+      order: 3;
+      justify-content: center;
+      margin-top: 0.5rem;
+    }
+    
+    .nav-icons input {
+      max-width: 120px;
+    }
+  }
