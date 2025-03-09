@@ -4,6 +4,7 @@ import Home from './pages/Home';
 import './App.css';
 import NewArrivals from './pages/NewArrivals';
 import Men from './pages/Men';
+import Women from './pages/Women';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/new" element={<NewArrivals />} />
         <Route path="/men" element={<Men />} />
+        <Route path="/women" element={<Women />} />
       </Routes>
     </Router>
   );
