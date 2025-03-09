@@ -1,0 +1,55 @@
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: var(--white);
+    border-bottom: 1px solid var(--blush-pink);
+  }
+  
+  .logo {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 2rem;
+    color: var(--burgundy);
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .nav-links a {
+    color: var(--burgundy);
+    text-decoration: none;
+    position: relative;
+  }
+  
+  .nav-links a:hover::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: var(--blush-pink);
+  }
+  
+  .nav-icons {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .nav-icons input {
+    padding: 0.5rem;
+    border: 1px solid var(--blush-pink);
+    border-radius: 20px;
+  }
+  
+  .wishlist, .cart {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    color: var(--burgundy);
+    cursor: pointer;
+  }

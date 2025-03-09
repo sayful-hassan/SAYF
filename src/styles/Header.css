@@ -1,0 +1,17 @@
+.main-header {
+    padding: 1rem 2rem;
+    background: var(--white);
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .header-tabs span {
+    color: var(--burgundy);
+    font-size: 0.9rem;
+    margin: 0 0.5rem;
+    cursor: pointer;
+  }
+  
+  .divider {
+    color: var(--blush-pink);
+  }
