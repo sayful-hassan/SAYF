@@ -13,6 +13,7 @@
     position: sticky;
     top: 120px;
     height: fit-content;
+    margin-bottom: 1.5rem;
   }
   .product-main {
     flex: 1;
@@ -80,10 +81,31 @@
     .filter-sidebar {
       grid-template-columns: repeat(3, 1fr); /* More columns for longer category names */
     }
+    .header-controls {
+      width: 100%;
+      justify-content: space-between;
+    }
   }
   
   @media (max-width: 480px) {
     .filter-sidebar {
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: 1fr;
+    }
+  
+    .product-grid {
+      grid-template-columns: 1fr; /* Single column for mobile */
+    }
+  
+    .product-card {
+      margin-bottom: 1rem;
+    }
+  
+    .image-placeholder {
+      height: 200px;
+    }
+  
+    .control-btn {
+      width: 100%;
+      justify-content: center;
     }
   }
