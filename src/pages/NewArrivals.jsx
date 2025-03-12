@@ -4,6 +4,7 @@ import '../styles/NewArrivals.css';
 import sixFaceTee from '../assets/images/tshirts/D3 mockup.jpg'
 import ruefulTee from '../assets/images/tshirts/BL1.jpg'
 import neverMind from '../assets/images/tshirts/WHITE BLACK.jpg'
+import prior from '../assets/images/tshirts/2.jpg'
 
 const NewArrivals = () => {
   const collections = ['Trending', 'Classic Collection', 'Core Product'];
@@ -14,15 +15,20 @@ const NewArrivals = () => {
       image : sixFaceTee
     },
     {
+      title : 'Never mind Tee',
+      price : '$399',
+      image : neverMind
+    },
+    {
+      title : 'Prior Tee',
+      price : '$799',
+      image : prior
+    },
+    {
       title : 'Rueful print Tee',
       price : '$599',
       image : ruefulTee
     },
-    {
-      title : 'Never mind Tee',
-      price : '$399',
-      image : neverMind
-    }
   ]
   
   return (
