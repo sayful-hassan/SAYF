@@ -38,6 +38,7 @@
     flex: 1;
     max-height: 80vh;
     overflow-y: auto;
+    z-index: 1;
   }
   
   .product-header {
