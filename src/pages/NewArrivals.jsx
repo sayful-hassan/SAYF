@@ -1,9 +1,29 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
 import '../styles/NewArrivals.css';
+import sixFaceTee from '../assets/images/tshirts/D3 mockup.jpg'
+import ruefulTee from '../assets/images/tshirts/BL1.jpg'
+import neverMind from '../assets/images/tshirts/WHITE BLACK.jpg'
 
 const NewArrivals = () => {
   const collections = ['Trending', 'Classic Collection', 'Core Product'];
+  const products = [
+    {
+      title : 'Six-face Tee',
+      price : '$499',
+      image : sixFaceTee
+    },
+    {
+      title : 'Rueful print Tee',
+      price : '$599',
+      image : ruefulTee
+    },
+    {
+      title : 'Never mind Tee',
+      price : '$399',
+      image : neverMind
+    }
+  ]
   
   return (
     <div className="new-arrivals-page">
@@ -15,11 +35,11 @@ const NewArrivals = () => {
           <div key={collection} className="collection-section">
             <h2 className="collection-heading">{collection}</h2>
             <div className="scrollable-grid">
-              {[...Array(6)].map((_, i) => (
+              {products.map((product, i) => (
                 <div key={i} className="product-card">
-                  <div className="image-placeholder"></div>
-                  <h3>Product Title</h3>
-                  <p className="price">$99.99</p>
+                  <img src={product.image} alt={product.name} className='product-image'/>
+                  <h3>{product.title}</h3>
+                  <p className="price">{product.price}</p>
                 </div>
               ))}
             </div>

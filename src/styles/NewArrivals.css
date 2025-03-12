@@ -60,3 +60,10 @@
     background: var(--soft-blue);
     margin: 3rem 1.5rem;
   }
+
+  .product-card img.product-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+  }
