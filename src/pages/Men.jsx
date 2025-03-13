@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Navbar from '../components/Navbar';
 import '../styles/Men.css';
 import NeverMindEcru from '../assets/images/tshirts/4.jpg';
-import SayfEye from '../assets/images/tshirts/IMG_6420.jpg'
+import SayfEye from '../assets/images/tshirts/IMG_6420.jpg';
 
 const Men = () => {
   const [selectedCategory, setSelectedCategory] = useState('All clothing');
