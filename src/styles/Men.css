@@ -75,21 +75,39 @@
     background: var(--white);
     border: 1px solid var(--soft-blue);
     padding: 1rem;
-    height: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
   }
   
-  .image-placeholder {
+  .product-image {
     width: 100%;
     height: 250px;
-    min-height: 250px;
     background: var(--soft-blue);
     margin-bottom: 1rem;
     object-fit: cover;
+  }
+
+  .product-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-style: italic;
   }
   
   .product-info h3 {
     margin-bottom: 0.5rem;
     min-height: 2.6rem;
+  }
+
+  .product-info p {
+    margin: 0.3rem 0;
+  }
+
+  .price {
+    font-weight: bold;
+    color: var(--charcoal-grey);
   }
   
   .scroll-indicator {

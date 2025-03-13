@@ -1,10 +1,30 @@
 import React, { useState } from 'react';
 import Navbar from '../components/Navbar';
 import '../styles/Men.css';
+import NeverMindEcru from '../assets/images/tshirts/4.jpg';
+import SayfEye from '../assets/images/tshirts/IMG_6420.jpg'
 
 const Men = () => {
   const [selectedCategory, setSelectedCategory] = useState('All clothing');
-  const categories = ['All clothing', 'Jackets', 'Shirts & tops', 'Shorts', 'Shoes', 'Socks'];
+  const categories = ['All clothing', 'Regular Tee', 'Oversized Tee', 'Raglan shoulder', 'Core', 'Vest'];
+  const Products = [
+    {
+      title : "Never mind Tee",
+      spec : "Puff Screen print with drop shoulder ",
+      color : "Color : Ecru",
+      price : "MRP 599",
+      categories : "Oversized Tee",
+      Image : NeverMindEcru
+    },
+    {
+      title : "Sayf eye",
+      spec : "Dtf print with regular white tee ",
+      color : "Color : white",
+      price : "MRP 299",
+      categories : "Regular Tee",
+      Image : SayfEye
+    }
+  ]
 
   return (
     <div className="men-page">
@@ -42,14 +62,14 @@ const Men = () => {
           </div>
 
           <div className="product-grid">
-            {[...Array(9)].map((_, i) => (
+            {Products.map((product, i) => (
               <div key={i} className="product-card">
-                <div className="image-placeholder"></div>
+                <img src={product.Image} alt={product.title} className='product-image'/>
                 <div className="product-info">
-                  <h3>Premium Wool Jacket</h3>
-                  <p className="specs">Slim fit, Notch lapel</p>
-                  <p className="color">Color: Charcoal Grey</p>
-                  <p className="price">MRP: $299.99</p>
+                  <h3>{product.title}</h3>
+                  <p className="specs">{product.spec}</p>
+                  <p className="color">{product.color}</p>
+                  <p className="price">{product.price}</p>
                 </div>
               </div>
             ))}
