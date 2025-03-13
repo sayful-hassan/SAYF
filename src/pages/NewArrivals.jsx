@@ -12,22 +12,28 @@ const NewArrivals = () => {
     {
       title : 'Six-face Tee',
       price : '$499',
-      image : sixFaceTee
+      image : sixFaceTee,
+      collection : 'Trending'
     },
     {
       title : 'Never mind Tee',
       price : '$399',
-      image : neverMind
+      image : neverMind,
+      collection : 'Classic Collection'
+
     },
     {
       title : 'Prior Tee',
       price : '$799',
-      image : prior
+      image : prior,
+      collection : 'Core Product'
     },
     {
       title : 'Rueful print Tee',
       price : '$599',
-      image : ruefulTee
+      image : ruefulTee,
+      collection : 'Core Product'
+
     },
   ]
   
@@ -37,24 +43,27 @@ const NewArrivals = () => {
       <Navbar activeTab="New Arrivals" />
       
       <div className="collections-container">
-        {collections.map((collection, index) => (
-          <div key={collection} className="collection-section">
-            <h2 className="collection-heading">{collection}</h2>
-            <div className="scrollable-grid">
-              {products.map((product, i) => (
-                <div key={i} className="product-card">
-                  <img src={product.image} alt={product.name} className='product-image'/>
-                  <h3>{product.title}</h3>
-                  <p className="price">{product.price}</p>
-                </div>
-              ))}
-            </div>
-            {index !== collections.length - 1 && <hr className="section-divider" />}
-          </div>
-        ))}
+        {collections.map((collection) => {
+          const collectionProducts = products.filter(product => product.collection === collection);
+          return (
+            <div key={collection} className='collection-section'>
+              <h2 className='collection-heading'>{collection}</h2>
+              <div className='scrollable-grid'>
+                {collectionProducts.map((product, i) => (
+                  <div key={i} className='product-card'>
+                    <img src={product.image} alt={product.title} className='product-image'/>
+                    <h3>{product.title}</h3>
+                    <p className='price'>{product.price}</p>
+                  </div>
+                ))}
+              </div>
       </div>
-    </div>
+          );
+        })}
+        </div>
+      </div>
   );
+              
 };
 
 export default NewArrivals;
