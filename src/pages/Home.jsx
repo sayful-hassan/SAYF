@@ -10,11 +10,11 @@ const Home = () => {
       <Navbar activeTab="Home" />
       <div className="hero-video">
         <div className="video-placeholder">
-        <video autoPlay loop>
+        <video autoPlay loop muted>
             <source src={video} type="video/mp4" />
             Your browser does not support the video tag.
-          <h1>SAYF Collection</h1>
           </video>
+          <h1 className='video-heading'>SAYF Collection</h1>
         </div>
       </div>
     </div>
