@@ -1,19 +1,37 @@
 import React, { useState } from 'react';
 import Navbar from '../components/Navbar';
 import '../styles/Women.css';
+import sixFacesTee from '../assets/images/tshirts/D3 mockup.jpg'
+import sayfEyes from '../assets/images/tshirts/smartmockups_ljxbdtpd.jpg'
 
 const Women = () => {
   const [selectedCategory, setSelectedCategory] = useState('All clothing');
   const categories = [
     'All clothing',
-    'Kurtas & Suits',
-    'Dresses',
-    'Tops & Tees',
-    'Bras & Lingerie',
-    'Bottom Wear',
-    'Ethnic Wear',
-    'Winter Wear'
+    'Regular tee',
+    'Oversized',
+    'Full sleeve',
+    'Hoodie',
+    'Vest',
   ];
+  const Products = [
+      {
+        title : "Six faces tee",
+        spec : "Screen print with drop full sleeve",
+        color : "Color : Blue + White",
+        price : "MRP 899",
+        categories : "Full sleeve Tee",
+        Image : sixFacesTee
+      },
+      {
+        title : "Sayf eye",
+        spec : "Dtf print with regular white tee ",
+        color : "Color : white",
+        price : "MRP 299",
+        categories : "Regular Tee",
+        Image : sayfEyes
+      }
+    ]
 
   return (
     <div className="women-page">
@@ -51,14 +69,14 @@ const Women = () => {
           </div>
 
           <div className="product-grid">
-            {[...Array(9)].map((_, i) => (
+            {Products.map((product, i) => (
               <div key={i} className="product-card">
-                <div className="image-placeholder"></div>
+                <img src={product.Image} alt={product.title} className='product-image'/>
                 <div className="product-info">
-                  <h3>Embroidered Georgette Kurta</h3>
-                  <p className="specs">Floral embroidery, Chiffon dupatta</p>
-                  <p className="color">Color: Ivory White</p>
-                  <p className="price">MRP: $159.99</p>
+                  <h3>{product.title}</h3>
+                  <p className="specs">{product.spec}</p>
+                  <p className="color">{product.color}</p>
+                  <p className="price">{product.price}</p>
                 </div>
               </div>
             ))}
