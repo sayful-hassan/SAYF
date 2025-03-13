@@ -1,10 +1,11 @@
 import '../styles/Navbar.css';
 import { Link } from 'react-router-dom';
+import logo from '../assets/images/logos/SAYF arabic logo.png'
 
 const Navbar = ({ activeTab }) => {
   return (
     <nav className="main-nav">
-      <div className="logo"><img src='../assets/images/D4.jpg' alt='logo'/></div>
+      <div ><img src={logo} alt='logo' className="logo"/></div>
       <div className="nav-links">
         <Link 
           to="/new" 

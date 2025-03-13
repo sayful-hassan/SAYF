@@ -11,6 +11,8 @@
     font-family: 'Libre Baskerville', serif;
     font-size: 2rem;
     color: var(--charcoal-grey);
+    width: 150px;
+    height: 50px;
   }
   
   .nav-links {
