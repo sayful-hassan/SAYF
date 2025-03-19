@@ -5,6 +5,12 @@ import sixFaceTee from '../assets/images/tshirts/D3 mockup.jpg'
 import ruefulTee from '../assets/images/tshirts/BL1.jpg'
 import neverMind from '../assets/images/tshirts/WHITE BLACK.jpg'
 import prior from '../assets/images/tshirts/2.jpg'
+import eye from '../assets/images/tshirts/tryt1.jpg'
+import blackEye from '../assets/images/tshirts/smartmockups_lkxca93r.jpg'
+import whiteEye from '../assets/images/tshirts/smartmockups_ljxbl9fa.jpg'
+import whiteCrop from '../assets/images/tshirts/smartmockups_ljxbc803.jpg'
+import blackEyeWith from '../assets/images/tshirts/1.jpg'
+import meeklyFly from '../assets/images/tshirts/W2.jpg'
 
 const NewArrivals = () => {
   const collections = ['Trending', 'Classic Collection', 'Core Product'];
@@ -34,6 +40,42 @@ const NewArrivals = () => {
       image : ruefulTee,
       collection : 'Core Product'
 
+    },
+    {
+      title: 'Eyes on you',
+      price: '$280',
+      image: eye,
+      collection:'Trending'
+    },
+    {
+      title: 'Six-face Tee regular',
+      price: '$240',
+      image: blackEye,
+      collection:'Trending'
+    },
+    {
+      title: 'Sayf-Eye',
+      price: '$250',
+      image: whiteEye,
+      collection:'Core Product'
+    },
+    {
+      title: 'Sayf-Eye Crop cut',
+      price: '$210',
+      image: whiteCrop,
+      collection:'Trending'
+    },
+    {
+      title: 'Meekly fly',
+      price: '$200',
+      image: meeklyFly,
+      collection:'Classic Collection'
+    },
+    {
+      title: 'Black Tee-Eye',
+      price: '$210',
+      image: blackEyeWith,
+      collection:'Classic Collection'
     },
   ]
   
