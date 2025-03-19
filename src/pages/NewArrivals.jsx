@@ -11,6 +11,8 @@ import whiteEye from '../assets/images/tshirts/smartmockups_ljxbl9fa.jpg'
 import whiteCrop from '../assets/images/tshirts/smartmockups_ljxbc803.jpg'
 import blackEyeWith from '../assets/images/tshirts/1.jpg'
 import meeklyFly from '../assets/images/tshirts/W2.jpg'
+import imposePattern from '../assets/images/tshirts/IMG_8884.jpg'
+import whiteImposePattern from '../assets/images/tshirts/IMG_8887.jpg'
 
 const NewArrivals = () => {
   const collections = ['Trending', 'Classic Collection', 'Core Product'];
@@ -75,6 +77,18 @@ const NewArrivals = () => {
       title: 'Black Tee-Eye',
       price: '$210',
       image: blackEyeWith,
+      collection:'Classic Collection'
+    },
+    {
+      title: 'Full sleeve impose pattern',
+      price: '$210',
+      image: imposePattern,
+      collection:'Trending'
+    },
+    {
+      title: 'White Classic impose fullsleeve-pattern',
+      price: '$210',
+      image: whiteImposePattern,
       collection:'Classic Collection'
     },
   ]
