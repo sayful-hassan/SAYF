@@ -12,7 +12,6 @@ const Kids = () => {
     'All Items',
     'Boys Wear',
     'Girls Wear',
-    'School Uniforms',
     'Party Wear',
     'Shoes & Socks',
     'Accessories'
