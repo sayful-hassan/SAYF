@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
 import Navbar from '../components/Navbar';
 import '../styles/Kids.css';
-import ahsan from '../assets/images/tshirts/2.jpg';
+import ahsan from '../assets/images/tshirts/kids/Surf printed t-shirt -  Women _ Mango United Kingdom.jpeg';
+import maazi from '../assets/images/tshirts/kids/download.jpeg'
+import sheza from '../assets/images/tshirts/kids/Animal Collective Group Nouns Kids Tee Shirt - Black _ 4T.jpeg'
+import aidan from '../assets/images/tshirts/kids/Multi Spray Colours - spring summer 2022.jpeg'
 
 const Kids = () => {
   const [selectedCategory, setSelectedCategory] = useState('All Items');
@@ -17,12 +20,36 @@ const Kids = () => {
   
   const Products = [
     {
+      title: "Surf Tee",
+      spec: "Puff print tee",
+      color: "Color: Pink",
+      price: "MRP 299",
+      categories: "Regular Tee",
+      Image: ahsan
+    },
+    {
       title: "Sayf eye",
       spec: "Dtf print with regular white tee",
       color: "Color: white",
       price: "MRP 299",
       categories: "Regular Tee",
-      Image: ahsan
+      Image: maazi
+    },
+    {
+      title: "Sayf eye",
+      spec: "Dtf print with regular white tee",
+      color: "Color: white",
+      price: "MRP 299",
+      categories: "Regular Tee",
+      Image: sheza
+    },
+    {
+      title: "Sayf eye",
+      spec: "Dtf print with regular white tee",
+      color: "Color: white",
+      price: "MRP 299",
+      categories: "Regular Tee",
+      Image: aidan
     },
   ];
 
