@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Navbar from '../components/Navbar';
 import '../styles/Kids.css';
+import ahsan from '../assets/images/tshirts/2.jpg';
 
 const Kids = () => {
   const [selectedCategory, setSelectedCategory] = useState('All Items');
@@ -13,6 +14,17 @@ const Kids = () => {
     'Shoes & Socks',
     'Accessories'
   ];
+  
+  const Products = [
+    {
+      title: "Sayf eye",
+      spec: "Dtf print with regular white tee",
+      color: "Color: white",
+      price: "MRP 299",
+      categories: "Regular Tee",
+      Image: ahsan
+    },
+  ];
 
   return (
     <div className="kids-page">
@@ -20,7 +32,6 @@ const Kids = () => {
       <Navbar activeTab="Kids" />
       
       <div className="content-container">
-        {/* Left Filters */}
         <div className="filter-sidebar">
           {categories.map(category => (
             <button
@@ -33,7 +44,6 @@ const Kids = () => {
           ))}
         </div>
 
-        {/* Right Products */}
         <div className="product-main">
           <div className="product-header">
             <h2>{selectedCategory}</h2>
@@ -50,14 +60,14 @@ const Kids = () => {
           </div>
 
           <div className="product-grid">
-            {[...Array(9)].map((_, i) => (
+            {Products.map((product, i) => (
               <div key={i} className="product-card">
-                <div className="image-placeholder"></div>
+                <img src={product.Image} alt={product.title} className='product-image'/>
                 <div className="product-info">
-                  <h3>Colorblock Hoodie Set</h3>
-                  <p className="specs">Age 4-6 | Machine Wash</p>
-                  <p className="color">Color: Navy/Orange</p>
-                  <p className="price">MRP: $49.99</p>
+                  <h3>{product.title}</h3>
+                  <p className="specs">{product.spec}</p>
+                  <p className="color">{product.color}</p>
+                  <p className="price">{product.price}</p>
                 </div>
               </div>
             ))}
