@@ -17,7 +17,7 @@ function App() {
         <Route path="/men" element={<Men />} />
         <Route path="/women" element={<Women />} />
         <Route path='/sales' element={<Sales/>} />
-        <Route path='/kids' elements={<Kids/>} />
+        <Route path='/kids' element={<Kids/>} />
       </Routes>
     </Router>
   );
