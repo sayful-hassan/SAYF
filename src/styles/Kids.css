@@ -1,0 +1,50 @@
+/* Reuse existing category page styles with minor adjustments */
+.kids-page {
+    padding: 0 2rem;
+  }
+  
+  .filter-option {
+    padding: 1rem;
+    font-size: 0.95rem; /* Slightly larger text for kid-friendly UI */
+  }
+  
+  .product-card {
+    border-radius: 12px; /* Softer edges for kid appeal */
+  }
+  
+  .product-info h3 {
+    color: var(--charcoal-grey);
+    font-size: 1.1rem;
+  }
+  
+  .specs {
+    color: var(--soft-blue);
+    font-size: 0.9rem;
+  }
+  
+  /* Age Badge Styling */
+  .product-card::after {
+    content: 'Age 4-6';
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: var(--soft-blue);
+    color: var(--charcoal-grey);
+    padding: 0.3rem 0.6rem;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .filter-sidebar {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0.8rem;
+    }
+  
+    .product-card::after {
+      font-size: 0.7rem;
+      padding: 0.2rem 0.5rem;
+    }
+  }
