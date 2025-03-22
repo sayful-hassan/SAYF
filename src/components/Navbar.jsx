@@ -5,7 +5,7 @@ import logo from '../assets/images/logos/SAYF arabic logo.png'
 const Navbar = ({ activeTab }) => {
   return (
     <nav className="main-nav">
-      <div ><img src={logo} alt='logo' className="logo"/></div>
+      <div ><Link to="/"><img src={logo} alt='logo' className="logo"/></Link></div>
       <div className="nav-links">
         <Link 
           to="/new" 
