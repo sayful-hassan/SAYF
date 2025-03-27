@@ -14,7 +14,7 @@ const Home = () => {
             <source src={video} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
-          <h1 className='video-heading'>SAYF Collection</h1>
+          <h1 className='video-heading'>SAYF<br/> Collection</h1>
         </div>
       </div>
     </div>
